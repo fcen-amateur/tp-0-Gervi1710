@@ -1,5 +1,6 @@
 import seaborn.objects as so
 from gapminder import gapminder
+import pandas as pd
 
 PopContinent=gapminder.groupby(["continent","year"])["pop"].sum()
 PopContinentDF=pd.DataFrame(PopContinent)
