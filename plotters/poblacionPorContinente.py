@@ -6,10 +6,10 @@ PopContinentDF=pd.DataFrame(PopContinent)
 
 def plot():
     figura = (
-                so.Plot(data=PopContinentDF, x="year", y="pop", color="continent")
-                .add(so.Line())
-                .label(title="Evolución de la población por continente", x="Año", y="Población (escala logarítmica)")
-                .scale(y="log")
+        so.Plot(data=PopContinentDF, x="year", y="pop", color="continent")
+        .add(so.Line())
+        .label(title="Evolución de la población por continente", x="Año", y="Población (escala logarítmica)")
+        .scale(y="log")
         )
     )
     return dict(
